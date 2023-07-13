@@ -1,0 +1,16 @@
+CREATE TABLES ON SQL SERVER
+
+user:
+user_id, user_name, user_surname, user_email,user_birthday
+
+appointment:
+appointment_id,appointment_date,return_date,(book_id and user_id foreign key),
+
+authors:
+author_id, author_name,author_surname,author_nationality
+
+types:
+book_types,book_id,(author_id and book_id foreign key)
+
+books:
+book_id,book_name,book_pages,(book_author_id and user_id foreign key)
